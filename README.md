@@ -1,6 +1,6 @@
 # TeamProjekt
 
-Das ist ein Gruppenarbeit von Olga Korkhova, Mohab Alyuson und Norman R. Tetzlaff
+Das ist ein Gruppenarbeit von Olga Korkhova, Mohab Alyuson, Sevil Aktas und Norman R. Tetzlaff
 
 - eintrag in die .env Datei:
 
