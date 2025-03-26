@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-import './App.css';
-import HomePage from './components/HomePage';
-import QuestionPage from './components/QuestionPage';
-import ResultsPage from './components/ResultsPage';
+import React, { useState } from "react";
+import "./App.css";
+import HomePage from "./components/HomePage";
+import QuestionPage from "./components/QuestionPage";
+import ResultsPage from "./components/ResultsPage";
+
+// eintragen der Url
+const baseUrl = "http://localhost:3001";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState("home");
   const [question, setQuestion] = useState(null);
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -15,11 +18,11 @@ const App = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/questions`);
-      if (!response.ok) throw new Error('Fehler beim Abrufen der Fragen');
+      const response = await fetch(`${baseUrl}/questions`);
+      if (!response.ok) throw new Error("Fehler beim Abrufen der Fragen");
       const data = await response.json();
       setQuestion(data);
-      setCurrentPage('question');
+      setCurrentPage("question");
     } catch (err) {
       setError(err.message);
     } finally {
@@ -31,18 +34,18 @@ const App = () => {
     setLoading(true);
     setError(null);
     try {
-      await fetch(`${process.env.REACT_APP_API_URL}/answer`, {
-        method: 'POST',
+      await fetch(`${baseUrl}/answer`, {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ answer }),
       });
-      const resultsResponse = await fetch(`${process.env.REACT_APP_API_URL}/results`);
-      if (!resultsResponse.ok) throw new Error('Fehler beim Abrufen der Ergebnisse');
+      const resultsResponse = await fetch(`${baseUrl}/results`);
+      if (!resultsResponse.ok) throw new Error("Fehler beim Abrufen der Ergebnisse");
       const resultsData = await resultsResponse.json();
       setResults(resultsData);
-      setCurrentPage('results');
+      setCurrentPage("results");
     } catch (err) {
       setError(err.message);
     } finally {
@@ -53,12 +56,10 @@ const App = () => {
   return (
     <div>
       {loading && <div>Lade...</div>}
-      {error && <div style={{ color: 'red' }}>Fehler: {error}</div>}
-      {currentPage === 'home' && <HomePage onStart={startGame} />}
-      {currentPage === 'question' && question && (
-        <QuestionPage question={question} onAnswer={handleAnswer} />
-      )}
-      {currentPage === 'results' && <ResultsPage results={results} />}
+      {error && <div style={{ color: "red" }}>Fehler: {error}</div>}
+      {currentPage === "home" && <HomePage onStart={startGame} />}
+      {currentPage === "question" && question && <QuestionPage question={question} onAnswer={handleAnswer} />}
+      {currentPage === "results" && <ResultsPage results={results} />}
     </div>
   );
 };
