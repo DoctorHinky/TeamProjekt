@@ -5,7 +5,7 @@ import QuestionPage from "./components/QuestionPage";
 import ResultsPage from "./components/ResultsPage";
 
 // eintragen der Url
-const baseUrl = "http://localhost:3001";
+const baseUrl = "http://localhost:5001";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -35,7 +35,7 @@ const App = () => {
     setError(null);
     try {
       await fetch(`${baseUrl}/answer`, {
-        method: "POST",
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
