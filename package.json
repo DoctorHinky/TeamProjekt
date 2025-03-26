@@ -1,0 +1,12 @@
+{
+  "name": "teamprojekt",
+  "version": "1.0.0",
+  "description": "Das ist ein Gruppenarbeit von Olga Korkhova, Mohab Alyuson und Norman R. Tetzlaff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
