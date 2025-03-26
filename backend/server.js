@@ -4,6 +4,8 @@ import "dotenv/config.js";
 import "./utils/connect.js";
 import "./middleware/questions.js";
 import router from "./router/questionsRouter.js";
+import "./models/Voting.js";
+
 
 const app = express();
 
