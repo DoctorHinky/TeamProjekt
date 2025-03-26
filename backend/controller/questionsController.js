@@ -31,14 +31,29 @@ export const addquestion = async (req, res) => {
     }
 };
 
-export const editquestion = (req, res) => {
-    const { frage, antworten } = req.body;
+export const update = (req, res) => {
+    const { answer } = req.query;
     const { id } = req.params;
-    if (!mongoose.Types.ObjectId.isValid(id))
-      return res.status(404).send(`No question with id: ${id}`);
-    const updatedquestion = { frage, antworten, _id: id };
-    Voting.findByIdAndUpdate(id, updatedquestion, { new: true });
-    res.json(updatedquestion);
+    try {
+      const result = Voting.findById({ _id: id });
+      if (result) {
+        Voting.updateOne(
+          { _id: id },
+          { $inc: { [answer]: + 1 } },
+          (err, result) => {
+            if (err) {
+              res.status(404).json({ message: "Error updating the question" });
+            } else {
+              res.status(200).json(result);
+            }
+          }
+        );
+      } else {
+        res.status(404).json({ message: "Question not found" });
+      }
+    } catch (error) {
+      res.status(404).json({ message: error.message });
+    }      
 };
 
 export const deletequestion = (req, res) => {};
