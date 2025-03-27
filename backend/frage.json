@@ -1,42 +1,42 @@
 [
    {
-      "Frage": "Welche Technologie bevorzugen Sie für das Frontend?",
-      "Antworten": ["React – leistungsstark für komplexe SPAs", "Vue – einfach und flexibel für schnelle Entwicklung"]
+      "frage": "Welche Technologie bevorzugen Sie für das Frontend?",
+      "antworten": ["React – leistungsstark für komplexe SPAs", "Vue – einfach und flexibel für schnelle Entwicklung"]
    },
    {
-      "Frage": "Welches CSS-Framework nutzen Sie häufiger?",
-      "Antworten": ["Tailwind CSS – Utility-first-Ansatz für maximale Anpassung", "Bootstrap – bewährtes Framework mit vorgefertigten Komponenten"]
+      "frage": "Welches CSS-Framework nutzen Sie häufiger?",
+      "antworten": ["Tailwind CSS – Utility-first-Ansatz für maximale Anpassung", "Bootstrap – bewährtes Framework mit vorgefertigten Komponenten"]
    },
    {
-      "Frage": "Welche Rendering-Methode bevorzugen Sie?",
-      "Antworten": ["Server-Side Rendering (SSR) – bessere SEO und schnellere erste Ladezeit", "Client-Side Rendering (CSR) – interaktive und dynamische Benutzererfahrung"]
+      "frage": "Welche Rendering-Methode bevorzugen Sie?",
+      "antworten": ["Server-Side Rendering (SSR) – bessere SEO und schnellere erste Ladezeit", "Client-Side Rendering (CSR) – interaktive und dynamische Benutzererfahrung"]
    },
    {
-      "Frage": "Welche Backend-Sprache nutzen Sie am liebsten?",
-      "Antworten": ["Node.js – ideal für skalierbare, eventgetriebene Anwendungen", "Python (Django/FastAPI) – schnelle Entwicklung mit sauberer Syntax"]
+      "frage": "Welche Backend-Sprache nutzen Sie am liebsten?",
+      "antworten": ["Node.js – ideal für skalierbare, eventgetriebene Anwendungen", "Python (Django/FastAPI) – schnelle Entwicklung mit sauberer Syntax"]
    },
    {
-      "Frage": "Welche Datenbank bevorzugen Sie für Ihre Projekte?",
-      "Antworten": ["PostgreSQL – leistungsstarke relationale Datenbank mit ACID-Compliance", "MongoDB – flexible NoSQL-Datenbank für unstrukturierte Daten"]
+      "frage": "Welche Datenbank bevorzugen Sie für Ihre Projekte?",
+      "antworten": ["PostgreSQL – leistungsstarke relationale Datenbank mit ACID-Compliance", "MongoDB – flexible NoSQL-Datenbank für unstrukturierte Daten"]
    },
    {
-      "Frage": "Welche API-Technologie bevorzugen Sie?",
-      "Antworten": ["REST – einfach, weit verbreitet und gut für klassische Web-APIs", "GraphQL – flexible Abfragen und weniger Overfetching"]
+      "frage": "Welche API-Technologie bevorzugen Sie?",
+      "antworten": ["REST – einfach, weit verbreitet und gut für klassische Web-APIs", "GraphQL – flexible Abfragen und weniger Overfetching"]
    },
    {
-      "Frage": "Wie sichern Sie API-Endpunkte am häufigsten?",
-      "Antworten": ["JWT (JSON Web Token) – schnelle, stateless Authentifizierung", "OAuth – sicherer Standard für Drittanbieter-Authentifizierung"]
+      "frage": "Wie sichern Sie API-Endpunkte am häufigsten?",
+      "antworten": ["JWT (JSON Web Token) – schnelle, stateless Authentifizierung", "OAuth – sicherer Standard für Drittanbieter-Authentifizierung"]
    },
    {
-      "Frage": "Wie möchten Sie arbeiten?",
-      "Antworten": ["Teilzeit – flexible Arbeitszeiten für bessere Work-Life-Balance", "Vollzeit – stabile und langfristige Beschäftigung"]
+      "frage": "Wie möchten Sie arbeiten?",
+      "antworten": ["Teilzeit – flexible Arbeitszeiten für bessere Work-Life-Balance", "Vollzeit – stabile und langfristige Beschäftigung"]
    },
    {
-      "Frage": "Welche Architektur bevorzugen Sie für das Backend?",
-      "Antworten": ["Monolith – einfachere Entwicklung und Wartung für kleinere Teams", "Microservices – skalierbare und unabhängige Services für große Systeme"]
+      "frage": "Welche Architektur bevorzugen Sie für das Backend?",
+      "antworten": ["Monolith – einfachere Entwicklung und Wartung für kleinere Teams", "Microservices – skalierbare und unabhängige Services für große Systeme"]
    },
    {
-      "Frage": "Welches Caching-System nutzen Sie häufiger?",
-      "Antworten": ["Redis – schneller In-Memory-Cache mit Persistenzoptionen", "Memcached – leichtgewichtig und ideal für häufige Datenzugriffe"]
+      "frage": "Welches Caching-System nutzen Sie häufiger?",
+      "antworten": ["Redis – schneller In-Memory-Cache mit Persistenzoptionen", "Memcached – leichtgewichtig und ideal für häufige Datenzugriffe"]
    }
 ]
